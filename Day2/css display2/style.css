@@ -1,0 +1,13 @@
+.x {
+  height: 8px;
+  width: 30px;
+  background-color: Aqua;
+  margin: 100px;
+  padding: 30px;
+  display: inline-block;
+}
+#b {
+  display: none;
+}
+
+/* Write code here */
