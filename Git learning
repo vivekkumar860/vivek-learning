@@ -1,0 +1,146 @@
+// For a push
+1st-- "git add ." to add all the files
+2nd--"git commit -m "message"" to commit the changes
+3rd--"git push origin main" to push the changes to the master branch
+
+// For a pull
+1st--"git pull origin main" to pull the changes from the master branch
+// For a clone
+1st--"git clone <url>" to clone the repository
+// For a branch
+1st--"git branch <branch name>" to create a new branch
+2nd--"git checkout <branch name>" to switch to the new branch
+3rd--"git push origin <branch name>" to push the new branch to the repository
+// For a merge
+1st--"git checkout main" to switch to the main branch
+2nd--"git merge <branch name>" to merge the branch with the main branch
+3rd--"git push origin main" to push the changes to the main branch
+// For a pull request
+1st--"git pull origin main" to pull the changes from the main branch
+2nd--"git checkout -b <branch name>" to create a new branch
+3rd--"git add ." to add all the files
+4th--"git commit -m "message"" to commit the changes
+5th--"git push origin <branch name>" to push the changes to the new branch
+6th--Create a pull request on the repository
+// For a merge request
+1st--"git checkout main" to switch to the main branch
+2nd--"git pull origin main" to pull the changes from the main branch
+3rd--"git merge <branch name>" to merge the branch with the main branch
+4th--"git push origin main" to push the changes to the main branch
+5th--Delete the merged branch
+// For a delete branch
+1st--"git branch -d <branch name>" to delete the branch
+2nd--"git push origin --delete <branch name>" to delete the branch from the repository
+// For a delete repository
+1st--"git remote rm origin" to remove the remote repository
+2nd--"git remote add origin <url>" to add the new remote repository
+3rd--"git push origin main" to push the changes to the new repository
+// For a delete commit
+1st--"git reset --hard HEAD~1" to delete the last commit
+2nd--"git push origin main" to push the changes to the repository
+// For a delete file
+1st--"git rm <file name>" to delete the file
+2nd--"git commit -m "message"" to commit the changes
+3rd--"git push origin main" to push the changes to the repository
+// For a delete folder
+1st--"git rm -r <folder name>" to delete the folder
+2nd--"git commit -m "message"" to commit the changes
+3rd--"git push origin main" to push the changes to the repository
+// For a delete tag
+1st--"git tag -d <tag name>" to delete the tag
+2nd--"git push origin :refs/tags/<tag name>" to delete the tag from the repository
+// For a delete remote branch
+1st--"git push origin --delete <branch name>" to delete the branch from the repository
+// For a delete local branch
+1st--"git branch -d <branch name>" to delete the branch
+// For a delete remote repository
+1st--"git remote rm origin" to remove the remote repository
+// For a delete remote tag
+1st--"git push origin :refs/tags/<tag name>" to delete the tag from the repository
+// For a delete remote commit
+1st--"git reset --hard HEAD~1" to delete the last commit
+2nd--"git push origin main" to push the changes to the repository
+// For a delete remote file
+1st--"git rm <file name>" to delete the file
+2nd--"git commit -m "message"" to commit the changes
+3rd--"git push origin main" to push the changes to the repository
+// For a delete remote folder
+1st--"git rm -r <folder name>" to delete the folder
+2nd--"git commit -m "message"" to commit the changes
+3rd--"git push origin main" to push the changes to the repository
+// for change in repository from one to another repository
+1st--"git remote rm origin" to remove the remote repository
+2nd--"git remote add origin <url>" to add the new remote repository
+3rd--"git push origin main" to push the changes to the new repository
+// set url of the repository
+1st--"git remote set-url origin <url>" to set the url of the repository to the new url
+// For a delete remote repository
+1st--"git remote rm origin" to remove the remote repository
+// For a delete remote branch
+1st--"git push origin --delete <branch name>" to delete the branch from the repository
+// For a delete remote tag
+1st--"git push origin :refs/tags/<tag name>" to delete the tag from the repository]
+// For a delete remote commit
+1st--"git reset --hard HEAD~1" to delete the last commit
+2nd--"git push origin main" to push the changes to the repository
+// rebasing
+1st--"git checkout <branch name>" to switch to the branch
+2nd--"git pull origin <branch name>" to pull the changes from the branch
+3rd--"git checkout main" to switch to the main branch
+4th--"git pull origin main" to pull the changes from the main branch
+5th--"git rebase <branch name>" to rebase the branch with the main branch
+6th--"git push origin main" to push the changes to the main branch
+// use of git pull origin main --rebase
+1st--"git pull origin main --rebase" to pull the changes from the main branch and rebase the branch with the main branch
+// use of git pull origin main --no-rebase
+1st--"git pull origin main --no-rebase" to pull the changes from the main branch and merge the branch with the main branch
+// use of git pull origin main --ff-only
+1st--"git pull origin main --ff-only" to pull the changes from the main branch and merge the branch with the main branch using fast forward only
+// use of git pull origin main --no-ff
+1st--"git pull origin main --no-ff" to pull the changes from the main branch and merge the branch with the main branch without using fast forward
+// use of git pull origin main --ff
+1st--"git pull origin main --ff" to pull the changes from the main branch and merge the branch with the main branch using fast forward
+// use of git pull origin main --squash
+1st--"git pull origin main --squash" to pull the changes from the main branch and merge the branch with the main branch using squash
+// use of git pull origin main --commit
+1st--"git pull origin main --commit" to pull the changes from the main branch and merge the branch with the main branch using commit
+// use of git pull origin main --no-commit
+1st--"git pull origin main --no-commit" to pull the changes from the main branch and merge the branch with the main branch without using commit
+// use of git pull origin main --no-squash
+1st--"git pull origin main --no-squash" to pull the changes from the main branch and merge the branch with the main branch without using squash
+// use of git pull origin main --rebase --autostash
+1st--"git pull origin main --rebase --autostash" to pull the changes from the main branch and rebase the branch with the main branch and stash the changes
+// use of git pull origin main --rebase --no-autostash
+1st--"git pull origin main --rebase --no-autostash" to pull the changes from the main branch and rebase the branch with the main branch without stashing the changes
+// use of git pull origin main --rebase --stat
+1st--"git pull origin main --rebase --stat" to pull the changes from the main branch and rebase the branch with the main branch and show the statistics
+// use of git pull origin main --rebase --no-stat
+1st--"git pull origin main --rebase --no-stat" to pull the changes from the main branch and rebase the branch with the main branch without showing the statistics
+// use of git pull origin main --rebase --interactive
+1st--"git pull origin main --rebase --interactive" to pull the changes from the main branch and rebase the branch with the main branch interactively
+// use of git pull origin main --rebase --exec
+1st--"git pull origin main --rebase --exec" to pull the changes from the main branch and rebase the branch with the main branch and execute the command
+// use of git pull origin main --rebase --onto
+1st--"git pull origin main --rebase --onto" to pull the changes from the main branch and rebase the branch with the main branch onto the other branch
+// use of git pull origin main --rebase --preserve-merges
+1st--"git pull origin main --rebase --preserve-merges" to pull the changes from the main branch and rebase the branch with the main branch preserving the merges
+// use of git pull origin main --rebase --no-preserve-merges
+1st--"git pull origin main --rebase --no-preserve-merges" to pull the changes from the main branch and rebase the branch with the main branch without preserving the merges
+
+// use of git pull origin main --rebase --verify-signatures
+1st--"git pull origin main --rebase --verify-signatures" to pull the changes from the main branch and rebase the branch with the main branch and verify the signatures
+// use of git pull origin main --rebase --no-verify-signatures
+1st--"git pull origin main --rebase --no-verify-signatures" to pull the changes from the main branch and rebase the branch with the main branch without verifying the signatures
+// use of git pull origin main --rebase --gpg-sign
+1st--"git pull origin main --rebase --gpg-sign" to pull the changes from the main branch and rebase the branch with the main branch and sign the changes
+// use of git pull origin main --rebase --no-gpg-sign
+1st--"git pull origin main --rebase --no-gpg-sign" to pull the changes from the main branch and rebase the branch with the main branch without signing the changes
+// use of git pull origin main --rebase --strategy
+1st--"git pull origin main --rebase --strategy" to pull the changes from the main branch and rebase the branch with the main branch using the strategy
+// config
+1st--"git config --global user.name <name>" to set the username
+2nd--"git config --global user.email <email>" to set the email
+3rd--"git config --global user.password <password>" to set the password
+4th--"git config --global user.username <username>" to set the username
+5th--"git config --global user.token <token>" to set the token
+6th--"git config --global user.signing
