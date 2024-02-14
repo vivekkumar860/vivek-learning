@@ -1,0 +1,20 @@
+#container {
+  /* container styles for reference, don't edit these */
+  position: fixed;
+  z-index: 3;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  border: 1px solid darkseagreen;
+}
+
+#box {
+  background-color: darkseagreen;
+
+  /* code from here */
+
+  grid-area: 2/ 2 / span 3 / span 3;
+  /* to here */
+}
