@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Animation</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      .background {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, orange, violet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+      }
+      .clouds {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-image: url("data:image/jpeg;base64,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"); /* Replace with your cloud image */
+        background-repeat: repeat-x;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="circle" id="rotatingCircle">Rotating</div>
+      <div class="clouds"></div>
+    </div>
+
+    <script>
+      const circle = document.getElementById("rotatingCircle");
+      let angle = 0;
+      setInterval(() => {
+        angle = (angle + 2) % 360;
+        circle.style.transform = `rotate(${angle}deg)`;
+      }, 1000 / 60); // Rotate every 60th of a second
+    </script>
+  </body>
+</html>

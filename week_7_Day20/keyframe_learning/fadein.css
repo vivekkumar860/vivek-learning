@@ -1,0 +1,9 @@
+.element {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Use 'forwards' to keep the final state */
+  }
+  
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
