@@ -1,3 +1,9 @@
+div{
+  border:10px solid white;
+  padding:50px;
+  background:black;
+  color:white;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
