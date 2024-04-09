@@ -1,0 +1,41 @@
+div{
+    border:10px solid white;
+    padding:50px;
+    background:black;
+    color:white;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+  }
+  
+  .left-half, .right-half {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh; /* Full viewport height */
+    background: #add8e6; /* Light blue background */
+    animation: slideOut 5s forwards; /* Animation named slideOut, runs for 5 seconds */
+  }
+  
+  .left-half {
+    left: 0;
+    background: #add8e6; 
+    animation-name: slideOutLeft; /* Animation for sliding out to the left */
+  }
+  
+  .right-half {
+    right: 0;
+    background: #ffcccb; 
+    animation-name: slideOutRight; /* Animation for sliding out to the right */
+  }
+  
+  @keyframes slideOutLeft {
+    to { transform: translateX(-100%); } /* Slide out to the left */
+  }
+  
+  @keyframes slideOutRight {
+    to { transform: translateX(100%); } /* Slide out to the right */
+  }
+  
