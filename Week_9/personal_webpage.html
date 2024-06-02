@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Webpage</h1>
+    </header>
+    <div class="container">
+        <h2>Basic Information</h2>
+        <div id="input-section">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" rows="4"></textarea>
+            </div>
+            <button onclick="updateInfo()">Submit</button>
+        </div>
+        <div id="display-section" class="hidden">
+            <h2 id="display-name"></h2>
+            <p id="display-bio"></p>
+            <button onclick="editInfo()">Edit</button>
+        </div>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>Ticket Booking Website</li>
+            <li>E-waste Prevention Website</li>
+            <li>Arduino Robot Car for Obstacle Detection using Raspberry Pi</li>
+        </ul>
+
+        <h2>Contact</h2>
+        <p>Email: yourname@example.com</p>
+    </div>
+
+    <script>
+        function updateInfo() {
+            var name = document.getElementById('name').value;
+            var bio = document.getElementById('bio').value;
+            
+            if (name && bio) {
+                document.getElementById('display-name').textContent = name;
+                document.getElementById('display-bio').textContent = bio;
+                
+                document.getElementById('input-section').classList.add('hidden');
+                document.getElementById('display-section').classList.remove('hidden');
+            } else {
+                alert('Please fill out all fields.');
+            }
+        }
+
+        function editInfo() {
+            document.getElementById('input-section').classList.remove('hidden');
+            document.getElementById('display-section').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
