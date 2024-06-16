@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f0f0f0, #ffffff, #f0f0f0);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #6A5ACD;
+            height: 100vh;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .section {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        .active {
+            display: block;
+        }
+        .product-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product-form input, .product-form textarea {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            width: calc(100% - 22px); /* For padding and border */
+        }
+        .product-form button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .product-form button:hover {
+            background-color: #45a049;
+        }
+        .login-panel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .login-panel .login-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .login-panel input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .login-panel button {
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .login-panel button:hover {
+            background: #45a049;
+        }
+        .hidden {
+            display: none;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .header {
+            background: #6A5ACD;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 250px;
+            width: calc(100% - 250px);
+        }
+        .footer {
+            background: #6A5ACD;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            left: 250px;
+            width: calc(100% - 250px);
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .product-card img {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .product-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card .description {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .product-card .quantity,
+        .product-card .price {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .product-card button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('addProduct')">Add Product</a>
+        <a onclick="showSection('manageProducts')">Manage Products</a>
+        <a onclick="showSection('userProfile')">User Profile</a>
+        <a onclick="showSection('settings')">Settings</a>
+        <a onclick="logOut()">Log Out</a>
+    </div>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+    </div>
+    <div class="container">
+        <div id="home" class="section active">
+            <h1>Welcome to the Admin Dashboard</h1>
+            <p>Use the navigation bar to manage products, user profile, and site settings.</p>
+        </div>
+        <div id="addProduct" class="section">
+            <h1>Add New Product</h1>
+            <div class="product-form">
+                <input type="text" id="productName" placeholder="Product Name">
+                <input type="text" id="productImages" placeholder="Product Images (comma separated URLs)">
+                <textarea id="productDescription" placeholder="Product Description"></textarea>
+                <input type="number" id="productQuantity" placeholder="Quantity">
+                <input type="number" id="productPrice" placeholder="Price per Unit">
+                <button onclick="confirmAddProduct()">Add Product</button>
+            </div>
+        </div>
+        <div id="manageProducts" class="section">
+            <h1>Manage Products</h1>
+            <div class="product-list" id="productList"></div>
+        </div>
+        <div id="userProfile" class="section">
+            <h1>User Profile</h1>
+            <p>Manage your user profile settings here.</p>
+        </div>
+        <div id="settings" class="section">
+            <h1>Settings</h1>
+            <p>Configure your site settings here.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Admin Dashboard. All rights reserved.</p>
+    </div>
+
+    <div class="login-panel" id="loginPanel">
+        <div class="login-box">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <script>
+        let products = [];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            checkLogin();
+        });
+
+        function checkLogin() {
+            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+            if (isLoggedIn === 'true') {
+                document.getElementById('loginPanel').classList.add('hidden');
+                loadProducts();
+            }
+        }
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username === 'admin' && password === 'abcd1234') {
+                sessionStorage.setItem('isLoggedIn', 'true');
+                document.getElementById('loginPanel').classList.add('hidden');
+                loadProducts();
+            } else {
+                alert('Invalid username or password.');
+            }
+        }
+
+        function logOut() {
+            sessionStorage.removeItem('isLoggedIn');
+            location.reload();
+        }
+
+        function loadProducts() {
+            fetch('/products')
+                .then(response => response.json())
+                .then(data => {
+                    products = data;
+                    displayProducts();
+                });
+        }
+
+        function displayProducts() {
+            const productList = document.getElementById('productList');
+            productList.innerHTML = '';
+            products.forEach(product => {
+                let imagesHtml = '';
+                product.images.forEach(image => {
+                    imagesHtml += `<img src="${image}" alt="${product.name}">`;
+                });
+
+                productList.innerHTML += `
+                    <div class="product-card" id="${product.id}">
+                        ${imagesHtml}
+                        <h2>${product.name}</h2>
+                        <div class="description">${product.description}</div>
+                        <div class="quantity">Quantity: ${product.quantity}</div>
+                        <div class="price">Price per Unit: ₹${product.price}</div>
+                        <button onclick="editProduct('${product.id}')">Edit</button>
+                        <button onclick="deleteProduct('${product.id}')">Delete</button>
+                    </div>
+                `;
+            });
+        }
+
+        function editProduct(productId) {
+            const product = products.find(p => p.id === productId);
+            if (product) {
+                document.getElementById('productName').value = product.name;
+                document.getElementById('productImages').value = product.images.join(',');
+                document.getElementById('productDescription').value = product.description;
+                document.getElementById('productQuantity').value = product.quantity;
+                document.getElementById('productPrice').value = product.price;
+                showSection('addProduct');
+                // Update the confirm button to save changes
+                const confirmButton = document.querySelector('.product-form button');
+                confirmButton.textContent = 'Save Changes';
+                confirmButton.onclick = () => saveChanges(productId);
+            }
+        }
+
+        function saveChanges(productId) {
+            const name = document.getElementById('productName').value;
+            const images = document.getElementById('productImages').value.split(',');
+            const description = document.getElementById('productDescription').value;
+            const quantity = document.getElementById('productQuantity').value;
+            const price = document.getElementById('productPrice').value;
+
+            if (name && images.length > 0 && description && quantity && price) {
+                const productIndex = products.findIndex(p => p.id === productId);
+                if (productIndex !== -1) {
+                    products[productIndex] = { id: productId, name, images, description, quantity, price };
+                    saveProducts();
+                    alert('Product updated successfully!');
+                    resetForm();
+                    showSection('manageProducts');
+                }
+            } else {
+                alert('Please fill in all fields before saving changes.');
+            }
+        }
+
+        function deleteProduct(productId) {
+            const confirmDelete = confirm('Are you sure you want to delete this product?');
+            if (confirmDelete) {
+                products = products.filter(p => p.id !== productId);
+                saveProducts();
+                displayProducts();
+            }
+        }
+
+        function confirmAddProduct() {
+            const name = document.getElementById('productName').value;
+            const images = document.getElementById('productImages').value.split(',');
+            const description = document.getElementById('productDescription').value;
+            const quantity = document.getElementById('productQuantity').value;
+            const price = document.getElementById('productPrice').value;
+
+            if (name && images.length > 0 && description && quantity && price) {
+                const product = { id: generateUUID(), name, images, description, quantity, price };
+                addProduct(product);
+            } else {
+                alert('Please fill in all fields before adding a product.');
+            }
+        }
+
+        function addProduct(product) {
+            products.push(product);
+            saveProducts();
+            alert('Product added successfully!');
+            resetForm();
+            showSection('manageProducts');
+        }
+
+        function saveProducts() {
+            fetch('/products', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(products)
+            })
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                displayProducts();
+            });
+        }
+
+        function resetForm() {
+            document.getElementById('productName').value = '';
+            document.getElementById('productImages').value = '';
+            document.getElementById('productDescription').value = '';
+            document.getElementById('productQuantity').value = '';
+            document.getElementById('productPrice').value = '';
+            const confirmButton = document.querySelector('.product-form button');
+            confirmButton.textContent = 'Add Product';
+            confirmButton.onclick = confirmAddProduct;
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                }
+            });
+        }
+
+        function generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                const r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+    </script>
+</body>
+</html>

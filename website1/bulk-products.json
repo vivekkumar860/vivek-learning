@@ -1,0 +1,136 @@
+/*curl -X POST -H "Content-Type: application/json" -d @bulk-products.json http://localhost:3000/bulk-products*/
+
+[
+  {
+    "id": "1",
+    "name": "Metal Ball Caster Wheel with Screw and Nut",
+    "description": "This is a high-quality metal ball caster wheel with screw and nut, ideal for small robotic projects.",
+    "quantity": 1,
+    "price": 18.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2019/01/Metal-Ball-Caster-Wheel-for-Small-Robotic-Car-1.jpg"
+    ],
+    "total": "₹18.00"
+  },
+  {
+    "id": "2",
+    "name": "Laser Module",
+    "description": "A laser module for various DIY electronics and robotics projects.",
+    "quantity": 1,
+    "price": 32.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/Laser-Module-1.jpg"
+    ],
+    "total": "₹32.00"
+  },
+  {
+    "id": "3",
+    "name": "4 Power Indicator Battery Detection Module",
+    "description": "This module detects battery levels with four LED indicators.",
+    "quantity": 1,
+    "price": 59.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/4-Power-Indicator-Battery-Detection-Module.jpg"
+    ],
+    "total": "₹59.00"
+  },
+  {
+    "id": "4",
+    "name": "ESP32 (38 Pin) WiFi + Bluetooth NodeMCU-32 Development Board",
+    "description": "An advanced development board with WiFi and Bluetooth capabilities, suitable for IoT projects.",
+    "quantity": 1,
+    "price": 357.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/ESP32-Development-Board.jpg"
+    ],
+    "total": "₹357.00"
+  },
+  {
+    "id": "5",
+    "name": "10mm Continuous Buzzer PCB Mount",
+    "description": "A PCB mountable continuous buzzer for alerting purposes in various projects.",
+    "quantity": 1,
+    "price": 14.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/10mm-Continuous-Buzzer.jpg"
+    ],
+    "total": "₹14.00"
+  },
+  {
+    "id": "6",
+    "name": "40x1 Pin 2.54mm Pitch Male Berg Strip",
+    "description": "Male Berg strips for making reliable connections on a breadboard or PCB.",
+    "quantity": 2,
+    "price": 14.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/40x1-Pin-Male-Berg-Strip.jpg"
+    ],
+    "total": "₹14.00"
+  },
+  {
+    "id": "7",
+    "name": "40x1 Female Berg Strip",
+    "description": "Female Berg strips for connecting various components.",
+    "quantity": 1,
+    "price": 10.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/40x1-Female-Berg-Strip.jpg"
+    ],
+    "total": "₹10.00"
+  },
+  {
+    "id": "8",
+    "name": "12V 4CH Relay Board",
+    "description": "A 4-channel relay board operating at 12V, ideal for controlling high-power devices.",
+    "quantity": 1,
+    "price": 162.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/12V-4CH-Relay-Board.jpg"
+    ],
+    "total": "₹162.00"
+  },
+  {
+    "id": "9",
+    "name": "1 CH 5V active low Relay Board",
+    "description": "A single-channel relay board that operates at 5V, suitable for low-power applications.",
+    "quantity": 1,
+    "price": 37.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/1-CH-5V-active-low-Relay-Board.jpg"
+    ],
+    "total": "₹37.00"
+  },
+  {
+    "id": "10",
+    "name": "DC 6V To 30V One Way Relay Module",
+    "description": "A one-way relay module capable of handling voltages from 6V to 30V.",
+    "quantity": 1,
+    "price": 179.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/DC-6V-To-30V-One-Way-Relay-Module.jpg"
+    ],
+    "total": "₹179.00"
+  },
+  {
+    "id": "11",
+    "name": "LDR Sensor Module",
+    "description": "A light-dependent resistor sensor module for detecting light intensity.",
+    "quantity": 2,
+    "price": 52.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/LDR-Sensor-Module.jpg"
+    ],
+    "total": "₹52.00"
+  },
+  {
+    "id": "12",
+    "name": "Light Sensitive Photoresistor LDR Small",
+    "description": "A small light-sensitive photoresistor for various light-sensing applications.",
+    "quantity": 1,
+    "price": 24.00,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/Light-Sensitive-Photoresistor-LDR-Small.jpg"
+    ],
+    "total": "₹24.00"
+  }
+]

@@ -1,0 +1,499 @@
+[
+  {
+    "id": "767b1898-2ce3-49a3-abf7-3807ce2a4bb6",
+    "name": "3.3V/5V MB102 Breadboard Power Supply Module",
+    "images": [
+      "data:image/jpeg;base64",
+      "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"
+    ],
+    "description": "A versatile power supply module for breadboards, providing 3.3V and 5V outputs.",
+    "quantity": "1",
+    "price": "55"
+  },
+  {
+    "name": "GL-12 840 Points Solderless Breadboard",
+    "images": [
+      "https://example.com/images/gl12-breadboard.jpg"
+    ],
+    "description": "A solderless breadboard with 840 tie points, ideal for prototyping circuits.",
+    "quantity": 2,
+    "price": 49,
+    "id": "4b3ab6ee-a1b3-4d7f-9ff1-e6ff78e4a7a4"
+  },
+  {
+    "name": "ESP32 38Pin Development Board WiFi+Bluetooth Ultra-Low Power Consumption Dual Core",
+    "images": [
+      "https://example.com/images/esp32-development-board.jpg"
+    ],
+    "description": "A development board featuring the ESP32, with WiFi and Bluetooth connectivity and ultra-low power consumption.",
+    "quantity": 1,
+    "price": 328,
+    "id": "da8004b3-1425-4b56-a15a-c4cc2d645a3b"
+  },
+  {
+    "name": "High Purity 0.8mm Solder wire Tube with 60/40 Tin-Lead Alloy -14gm",
+    "images": [
+      "https://example.com/images/solder-wire-tube.jpg"
+    ],
+    "description": "High purity solder wire with 60/40 tin-lead alloy, 0.8mm diameter, and 14 grams in weight.",
+    "quantity": 1,
+    "price": 123,
+    "id": "5a4b3a98-9e20-4abf-b3bf-ef38508059ca"
+  },
+  {
+    "name": "0.1MM Copper Soldering Solder PPA Enamelled Repair Reel Wire",
+    "images": [
+      "https://example.com/images/enamelled-repair-wire.jpg"
+    ],
+    "description": "0.1MM copper soldering wire, ideal for precision repair work.",
+    "quantity": 1,
+    "price": 40,
+    "id": "8dbe3527-6ec2-44f8-83f2-e528638d6644"
+  },
+  {
+    "name": "Fuse Holder-BF-020",
+    "images": [
+      "https://example.com/images/fuse-holder.jpg"
+    ],
+    "description": "BF-020 fuse holder, suitable for a variety of electronic applications.",
+    "quantity": 2,
+    "price": 5.5,
+    "id": "40419a3e-f5b8-410a-9eb2-7ee92974971e"
+  },
+  {
+    "id": "6e3096a4-0711-4892-aa07-3af8c0701357",
+    "name": "Black Plastic Storage Box Case Holder For Battery 3 x 18650 Cell Box, Without Cover",
+    "description": "This storage box is designed to hold three 18650 battery cells securely without a cover.",
+    "quantity": 1,
+    "price": 32,
+    "images": [
+      "https://example.com/images/black-plastic-storage-box-case-holder.jpg"
+    ],
+    "total": "₹32.00"
+  },
+  {
+    "id": "a27a8333-4d61-4659-ac27-e25ba88a8aff",
+    "name": "Micro HDMI Male to HDMI Female Adapter for Pi4",
+    "description": "A compact adapter to connect a standard HDMI cable to the micro HDMI port on Raspberry Pi 4.",
+    "quantity": 1,
+    "price": 44,
+    "images": [
+      "https://example.com/images/micro-hdmi-male-to-hdmi-female-adapter.jpg"
+    ],
+    "total": "₹44.00"
+  },
+  {
+    "id": "65f698ca-9df8-419f-818a-22499d0d522e",
+    "name": "Noel 60W Temperature controlled Analog soldering Iron",
+    "description": "A temperature-controlled soldering iron suitable for precision soldering tasks.",
+    "quantity": 1,
+    "price": 599,
+    "images": [
+      "https://example.com/images/noel-60w-temperature-controlled-soldering-iron.jpg"
+    ],
+    "total": "₹599.00"
+  },
+  {
+    "id": "08ffea57-44d4-46c7-a8aa-5eb04102fe2e",
+    "name": "Official Micro-HDMI (Male) to Standard HDMI (Male) Cable for Raspberry Pi",
+    "description": "An official micro HDMI to standard HDMI cable designed for Raspberry Pi.",
+    "quantity": 1,
+    "price": 399,
+    "images": [
+      "https://example.com/images/official-micro-hdmi-to-hdmi-cable.jpg"
+    ],
+    "total": "₹399.00"
+  },
+  {
+    "id": "4c0b03af-2db5-474b-bcc1-f6fd1713c71e",
+    "name": "2.54mm 1x40 Pin Male Single Row Straight Short Header Strip (Pack of 3)",
+    "description": "A pack of 3 single row 1x40 pin headers, useful for connecting components on a breadboard.",
+    "quantity": 1,
+    "price": 25,
+    "images": [
+      "https://example.com/images/2.54mm-1x40-pin-header-strip.jpg"
+    ],
+    "total": "₹25.00"
+  },
+  {
+    "id": "909e8b73-b4bc-4b20-959b-1ed4dff350ed",
+    "name": "Metal Ball Caster Wheel with Screw and Nut",
+    "description": "This is a high-quality metal ball caster wheel with screw and nut, ideal for small robotic projects.",
+    "quantity": 1,
+    "price": 18,
+    "images": [
+      "https://robu.in/wp-content/uploads/2019/01/Metal-Ball-Caster-Wheel-for-Small-Robotic-Car-1.jpg"
+    ],
+    "total": "₹18.00"
+  },
+  {
+    "id": "55c07a37-0cc4-45e6-8e9d-435a76d0489f",
+    "name": "Laser Module",
+    "description": "A laser module for various DIY electronics and robotics projects.",
+    "quantity": 1,
+    "price": 32,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/Laser-Module-1.jpg"
+    ],
+    "total": "₹32.00"
+  },
+  {
+    "id": "e1a2c70a-1bb2-4e1d-b99c-553786d712e3",
+    "name": "4 Power Indicator Battery Detection Module",
+    "description": "This module detects battery levels with four LED indicators.",
+    "quantity": 1,
+    "price": 59,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/4-Power-Indicator-Battery-Detection-Module.jpg"
+    ],
+    "total": "₹59.00"
+  },
+  {
+    "id": "a0dd3851-320b-41d5-a108-3543ad6e1e14",
+    "name": "ESP32 (38 Pin) WiFi + Bluetooth NodeMCU-32 Development Board",
+    "description": "An advanced development board with WiFi and Bluetooth capabilities, suitable for IoT projects.",
+    "quantity": 1,
+    "price": 357,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/ESP32-Development-Board.jpg"
+    ],
+    "total": "₹357.00"
+  },
+  {
+    "id": "8d8f8863-7832-400b-9307-683528dd6123",
+    "name": "10mm Continuous Buzzer PCB Mount",
+    "description": "A PCB mountable continuous buzzer for alerting purposes in various projects.",
+    "quantity": 1,
+    "price": 14,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/10mm-Continuous-Buzzer.jpg"
+    ],
+    "total": "₹14.00"
+  },
+  {
+    "id": "b4f3966c-e14f-4fd6-999e-564fdbdebaf9",
+    "name": "40x1 Pin 2.54mm Pitch Male Berg Strip",
+    "description": "Male Berg strips for making reliable connections on a breadboard or PCB.",
+    "quantity": 2,
+    "price": 14,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/40x1-Pin-Male-Berg-Strip.jpg"
+    ],
+    "total": "₹14.00"
+  },
+  {
+    "id": "0540eec2-1510-487c-9ef1-c69153917000",
+    "name": "40x1 Female Berg Strip",
+    "description": "Female Berg strips for connecting various components.",
+    "quantity": 1,
+    "price": 10,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/40x1-Female-Berg-Strip.jpg"
+    ],
+    "total": "₹10.00"
+  },
+  {
+    "id": "96f593ee-f435-4ace-b3ec-3870bca3bac6",
+    "name": "12V 4CH Relay Board",
+    "description": "A 4-channel relay board operating at 12V, ideal for controlling high-power devices.",
+    "quantity": 1,
+    "price": 162,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/12V-4CH-Relay-Board.jpg"
+    ],
+    "total": "₹162.00"
+  },
+  {
+    "id": "275a4474-780a-4cd5-ac97-001f94ad4e66",
+    "name": "1 CH 5V active low Relay Board",
+    "description": "A single-channel relay board that operates at 5V, suitable for low-power applications.",
+    "quantity": 1,
+    "price": 37,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/1-CH-5V-active-low-Relay-Board.jpg"
+    ],
+    "total": "₹37.00"
+  },
+  {
+    "id": "acf79815-639f-401d-9e7e-7e2845ad94c0",
+    "name": "DC 6V To 30V One Way Relay Module",
+    "description": "A one-way relay module capable of handling voltages from 6V to 30V.",
+    "quantity": 1,
+    "price": 179,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/DC-6V-To-30V-One-Way-Relay-Module.jpg"
+    ],
+    "total": "₹179.00"
+  },
+  {
+    "id": "bf718c19-43a1-4f0a-8429-7f92c332a4fa",
+    "name": "LDR Sensor Module",
+    "description": "A light-dependent resistor sensor module for detecting light intensity.",
+    "quantity": 2,
+    "price": 52,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/LDR-Sensor-Module.jpg"
+    ],
+    "total": "₹52.00"
+  },
+  {
+    "id": "cfe7c4ce-ff96-4ef7-8772-ac411fb5b94c",
+    "name": "Light Sensitive Photoresistor LDR Small",
+    "description": "A small light-sensitive photoresistor for various light-sensing applications.",
+    "quantity": 1,
+    "price": 24,
+    "images": [
+      "https://robu.in/wp-content/uploads/2018/01/Light-Sensitive-Photoresistor-LDR-Small.jpg"
+    ],
+    "total": "₹24.00"
+  },
+  [
+    {
+      "id": "767b1898-2ce3-49a3-abf7-3807ce2a4bb6",
+      "name": "3.3V/5V MB102 Breadboard Power Supply Module",
+      "images": [
+        "https://example.com/images/mb102-power-supply.jpg"
+      ],
+      "description": "A versatile power supply module for breadboards, providing 3.3V and 5V outputs.",
+      "quantity": "1",
+      "price": "55"
+    },
+    {
+      "name": "GL-12 840 Points Solderless Breadboard",
+      "images": [
+        "https://example.com/images/gl12-breadboard.jpg"
+      ],
+      "description": "A solderless breadboard with 840 tie points, ideal for prototyping circuits.",
+      "quantity": 2,
+      "price": 49,
+      "id": "4b3ab6ee-a1b3-4d7f-9ff1-e6ff78e4a7a4"
+    },
+    {
+      "name": "ESP32 38Pin Development Board WiFi+Bluetooth Ultra-Low Power Consumption Dual Core",
+      "images": [
+        "https://example.com/images/esp32-development-board.jpg"
+      ],
+      "description": "A development board featuring the ESP32, with WiFi and Bluetooth connectivity and ultra-low power consumption.",
+      "quantity": 1,
+      "price": 328,
+      "id": "da8004b3-1425-4b56-a15a-c4cc2d645a3b"
+    },
+    {
+      "name": "High Purity 0.8mm Solder wire Tube with 60/40 Tin-Lead Alloy -14gm",
+      "images": [
+        "https://example.com/images/solder-wire-tube.jpg"
+      ],
+      "description": "High purity solder wire with 60/40 tin-lead alloy, 0.8mm diameter, and 14 grams in weight.",
+      "quantity": 1,
+      "price": 123,
+      "id": "5a4b3a98-9e20-4abf-b3bf-ef38508059ca"
+    },
+    {
+      "name": "0.1MM Copper Soldering Solder PPA Enamelled Repair Reel Wire",
+      "images": [
+        "https://example.com/images/enamelled-repair-wire.jpg"
+      ],
+      "description": "0.1MM copper soldering wire, ideal for precision repair work.",
+      "quantity": 1,
+      "price": 40,
+      "id": "8dbe3527-6ec2-44f8-83f2-e528638d6644"
+    },
+    {
+      "name": "Fuse Holder-BF-020",
+      "images": [
+        "https://example.com/images/fuse-holder.jpg"
+      ],
+      "description": "BF-020 fuse holder, suitable for a variety of electronic applications.",
+      "quantity": 2,
+      "price": 5.5,
+      "id": "40419a3e-f5b8-410a-9eb2-7ee92974971e"
+    },
+    {
+      "id": "6e3096a4-0711-4892-aa07-3af8c0701357",
+      "name": "Black Plastic Storage Box Case Holder For Battery 3 x 18650 Cell Box, Without Cover",
+      "description": "This storage box is designed to hold three 18650 battery cells securely without a cover.",
+      "quantity": 1,
+      "price": 32,
+      "images": [
+        "https://example.com/images/black-plastic-storage-box-case-holder.jpg"
+      ],
+      "total": "₹32.00"
+    },
+    {
+      "id": "a27a8333-4d61-4659-ac27-e25ba88a8aff",
+      "name": "Micro HDMI Male to HDMI Female Adapter for Pi4",
+      "description": "A compact adapter to connect a standard HDMI cable to the micro HDMI port on Raspberry Pi 4.",
+      "quantity": 1,
+      "price": 44,
+      "images": [
+        "https://example.com/images/micro-hdmi-male-to-hdmi-female-adapter.jpg"
+      ],
+      "total": "₹44.00"
+    },
+    {
+      "id": "65f698ca-9df8-419f-818a-22499d0d522e",
+      "name": "Noel 60W Temperature controlled Analog soldering Iron",
+      "description": "A temperature-controlled soldering iron suitable for precision soldering tasks.",
+      "quantity": 1,
+      "price": 599,
+      "images": [
+        "https://example.com/images/noel-60w-temperature-controlled-soldering-iron.jpg"
+      ],
+      "total": "₹599.00"
+    },
+    {
+      "id": "08ffea57-44d4-46c7-a8aa-5eb04102fe2e",
+      "name": "Official Micro-HDMI (Male) to Standard HDMI (Male) Cable for Raspberry Pi",
+      "description": "An official micro HDMI to standard HDMI cable designed for Raspberry Pi.",
+      "quantity": 1,
+      "price": 399,
+      "images": [
+        "https://example.com/images/official-micro-hdmi-to-hdmi-cable.jpg"
+      ],
+      "total": "₹399.00"
+    },
+    {
+      "id": "4c0b03af-2db5-474b-bcc1-f6fd1713c71e",
+      "name": "2.54mm 1x40 Pin Male Single Row Straight Short Header Strip (Pack of 3)",
+      "description": "A pack of 3 single row 1x40 pin headers, useful for connecting components on a breadboard.",
+      "quantity": 1,
+      "price": 25,
+      "images": [
+        "https://example.com/images/2.54mm-1x40-pin-header-strip.jpg"
+      ],
+      "total": "₹25.00"
+    },
+    {
+      "id": "909e8b73-b4bc-4b20-959b-1ed4dff350ed",
+      "name": "Metal Ball Caster Wheel with Screw and Nut",
+      "description": "This is a high-quality metal ball caster wheel with screw and nut, ideal for small robotic projects.",
+      "quantity": 1,
+      "price": 18,
+      "images": [
+        "https://robu.in/wp-content/uploads/2019/01/Metal-Ball-Caster-Wheel-for-Small-Robotic-Car-1.jpg"
+      ],
+      "total": "₹18.00"
+    },
+    {
+      "id": "55c07a37-0cc4-45e6-8e9d-435a76d0489f",
+      "name": "Laser Module",
+      "description": "A laser module for various DIY electronics and robotics projects.",
+      "quantity": 1,
+      "price": 32,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/Laser-Module-1.jpg"
+      ],
+      "total": "₹32.00"
+    },
+    {
+      "id": "e1a2c70a-1bb2-4e1d-b99c-553786d712e3",
+      "name": "4 Power Indicator Battery Detection Module",
+      "description": "This module detects battery levels with four LED indicators.",
+      "quantity": 1,
+      "price": 59,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/4-Power-Indicator-Battery-Detection-Module.jpg"
+      ],
+      "total": "₹59.00"
+    },
+    {
+      "id": "a0dd3851-320b-41d5-a108-3543ad6e1e14",
+      "name": "ESP32 (38 Pin) WiFi + Bluetooth NodeMCU-32 Development Board",
+      "description": "An advanced development board with WiFi and Bluetooth capabilities, suitable for IoT projects.",
+      "quantity": 1,
+      "price": 357,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/ESP32-Development-Board.jpg"
+      ],
+      "total": "₹357.00"
+    },
+    {
+      "id": "8d8f8863-7832-400b-9307-683528dd6123",
+      "name": "10mm Continuous Buzzer PCB Mount",
+      "description": "A PCB mountable continuous buzzer for alerting purposes in various projects.",
+      "quantity": 1,
+      "price": 14,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/10mm-Continuous-Buzzer.jpg"
+      ],
+      "total": "₹14.00"
+    },
+    {
+      "id": "b4f3966c-e14f-4fd6-999e-564fdbdebaf9",
+      "name": "40x1 Pin 2.54mm Pitch Male Berg Strip",
+      "description": "Male Berg strips for making reliable connections on a breadboard or PCB.",
+      "quantity": 2,
+      "price": 14,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/40x1-Pin-Male-Berg-Strip.jpg"
+      ],
+      "total": "₹14.00"
+    },
+    {
+      "id": "0540eec2-1510-487c-9ef1-c69153917000",
+      "name": "40x1 Female Berg Strip",
+      "description": "Female Berg strips for connecting various components.",
+      "quantity": 1,
+      "price": 10,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/40x1-Female-Berg-Strip.jpg"
+      ],
+      "total": "₹10.00"
+    },
+    {
+      "id": "96f593ee-f435-4ace-b3ec-3870bca3bac6",
+      "name": "12V 4CH Relay Board",
+      "description": "A 4-channel relay board operating at 12V, ideal for controlling high-power devices.",
+      "quantity": 1,
+      "price": 162,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/12V-4CH-Relay-Board.jpg"
+      ],
+      "total": "₹162.00"
+    },
+    {
+      "id": "275a4474-780a-4cd5-ac97-001f94ad4e66",
+      "name": "1 CH 5V active low Relay Board",
+      "description": "A single-channel relay board that operates at 5V, suitable for low-power applications.",
+      "quantity": 1,
+      "price": 37,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/1-CH-5V-active-low-Relay-Board.jpg"
+      ],
+      "total": "₹37.00"
+    },
+    {
+      "id": "acf79815-639f-401d-9e7e-7e2845ad94c0",
+      "name": "DC 6V To 30V One Way Relay Module",
+      "description": "A one-way relay module capable of handling voltages from 6V to 30V.",
+      "quantity": 1,
+      "price": 179,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/DC-6V-To-30V-One-Way-Relay-Module.jpg"
+      ],
+      "total": "₹179.00"
+    },
+    {
+      "id": "bf718c19-43a1-4f0a-8429-7f92c332a4fa",
+      "name": "LDR Sensor Module",
+      "description": "A light-dependent resistor sensor module for detecting light intensity.",
+      "quantity": 2,
+      "price": 52,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/LDR-Sensor-Module.jpg"
+      ],
+      "total": "₹52.00"
+    },
+    {
+      "id": "cfe7c4ce-ff96-4ef7-8772-ac411fb5b94c",
+      "name": "Light Sensitive Photoresistor LDR Small",
+      "description": "A small light-sensitive photoresistor for various light-sensing applications.",
+      "quantity": 1,
+      "price": 24,
+      "images": [
+        "https://robu.in/wp-content/uploads/2018/01/Light-Sensitive-Photoresistor-LDR-Small.jpg"
+      ],
+      "total": "₹24.00"
+    }
+  ]
+]

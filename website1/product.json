@@ -1,0 +1,44 @@
+[
+  {
+    "name": "3.3V/5V MB102 Breadboard Power Supply Module",
+    "images": ["https://example.com/images/mb102-power-supply.jpg"],
+    "description": "A versatile power supply module for breadboards, providing 3.3V and 5V outputs.",
+    "quantity": 1,
+    "price": 55.0
+  },
+  {
+    "name": "GL-12 840 Points Solderless Breadboard",
+    "images": ["https://example.com/images/gl12-breadboard.jpg"],
+    "description": "A solderless breadboard with 840 tie points, ideal for prototyping circuits.",
+    "quantity": 2,
+    "price": 49.0
+  },
+  {
+    "name": "ESP32 38Pin Development Board WiFi+Bluetooth Ultra-Low Power Consumption Dual Core",
+    "images": ["https://example.com/images/esp32-development-board.jpg"],
+    "description": "A development board featuring the ESP32, with WiFi and Bluetooth connectivity and ultra-low power consumption.",
+    "quantity": 1,
+    "price": 328.0
+  },
+  {
+    "name": "High Purity 0.8mm Solder wire Tube with 60/40 Tin-Lead Alloy -14gm",
+    "images": ["https://example.com/images/solder-wire-tube.jpg"],
+    "description": "High purity solder wire with 60/40 tin-lead alloy, 0.8mm diameter, and 14 grams in weight.",
+    "quantity": 1,
+    "price": 123.0
+  },
+  {
+    "name": "0.1MM Copper Soldering Solder PPA Enamelled Repair Reel Wire",
+    "images": ["https://example.com/images/enamelled-repair-wire.jpg"],
+    "description": "0.1MM copper soldering wire, ideal for precision repair work.",
+    "quantity": 1,
+    "price": 40.0
+  },
+  {
+    "name": "Fuse Holder-BF-020",
+    "images": ["https://example.com/images/fuse-holder.jpg"],
+    "description": "BF-020 fuse holder, suitable for a variety of electronic applications.",
+    "quantity": 2,
+    "price": 5.5
+  }
+]
